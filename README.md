@@ -55,8 +55,14 @@ $ readlink -f $(which java)
 $ cd <project_dir>
 $ git clone https://github.com/beeware/rubicon-java.git
 ```
+4. Modify MakeFile
 
-4. Build
+Check line 7 and 52 from above [MakeFile](https://github.com/shahazzat/rubicon-java/blob/master/Makefile)
+```
+PYTHON_CONFIG := "/usr/local/bin/python3.8-config"
+JAVA_HOME := "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.292.b10-1.el7_9.x86_64"
+```
+5. Build
 ```
 $ make
 ```
