@@ -29,6 +29,7 @@ $ sudo make altinstall
 $ readlink -f $(which python3.8)
 /usr/local/bin/python3.8
 ```
+**Do not extract and install from virtualbox shared folder.**
 **Note:** If you install python by following above process then you will face below issue. To fix this, you need to execute below command.
 ```
 $ ./configure --enable-optimizations
